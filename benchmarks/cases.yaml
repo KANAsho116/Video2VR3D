@@ -1,0 +1,29 @@
+version: 1
+notes: |
+  ベンチマーク対象の入力動画ケース定義。
+  path はプロジェクトルート基準の相対パス。
+
+categories:
+  - id: face_closeup
+    description: 顔アップ（人物が画面の大部分を占める）
+    cases:
+      - case_id: face_closeup_sample
+        path: samples/face_closeup.mp4
+        expected_orientation: landscape
+        tags: [human, closeup]
+
+  - id: portrait_video
+    description: 縦動画（スマートフォン撮影想定）
+    cases:
+      - case_id: portrait_sample
+        path: samples/portrait_vertical.mp4
+        expected_orientation: portrait
+        tags: [vertical, smartphone]
+
+  - id: long_over_3min
+    description: 3分超の長尺動画
+    cases:
+      - case_id: longform_sample
+        path: samples/long_over_3min.mp4
+        expected_min_duration_sec: 180
+        tags: [longform, stress]
