@@ -12,4 +12,5 @@ dependencies = [
   "numpy>=1.26",
   "opencv-python>=4.9",
   "ffmpeg-python>=0.2.0",
+  "PyYAML>=6.0",
 ]
