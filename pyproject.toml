@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video2vr3d"
+version = "0.1.0"
+description = "Video2VR3D application"
+requires-python = ">=3.10"
+dependencies = [
+  "PySide6>=6.6",
+  "numpy>=1.26",
+  "opencv-python>=4.9",
+  "ffmpeg-python>=0.2.0",
+]
